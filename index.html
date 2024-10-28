@@ -1,10 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tutorial Github e Git</title>
+    <meta name="description" content="Tutorial su come usare Github e Git">
+    <meta name="keywords" content="Github, Git, Tutorial">
+    <meta name="author" content="Gabriele Bovina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icona-noBG-w.png" type="image/x-icon">
 </head>
-<body>
 
+<body>
+    <header>
+        <h1>Tutorial Github e Git</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Github">Cos'è Github</a></li>
+            <li><a href="#Git">Cos'è Git</a></li>
+            <li><a href="#In">Installazioni</a></li>
+            <ul>
+                <li><a href="#InGit">Git</a></li>
+                <li><a href="#InSourceTree">SourceTree</a></li>
+            </ul>
+            <li><a href="#UsoSourceTree">Uso di SourceTree</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Benvenuto nel tutorial su Github e Git</h2>
+            <p>Questo tutorial è stato creato per aiutare chiunque voglia imparare ad usare Github e Git per il progetto
+                ITI-TV. Qui troverai tutte le informazioni necessarie per iniziare a usare queste due piattaforme.</p>
+            <p>Se non sai da dove iniziare, ti consiglio di dare un'occhiata alla sezione <a href="#">Cos'è Github</a> e
+                <a href="#">Cos'è Git</a>.
+            </p>
+            <p>Se invece sei già un utente esperto, puoi saltare direttamente alla sezione <a href="#">Comandi</a> per
+                vedere come usare SourceTree.</p>
+        </section>
+        <section id="Github">
+            <h2>Cos'è Github</h2>
+            <p>Github è una piattaforma di hosting per progetti software. È basata su Git, un sistema di controllo
+                versione distribuito. Github è stato creato nel 2008 da Chris Wanstrath, PJ Hyett e Tom Preston-Werner.
+            </p>
+            <p>Con Github è possibile creare repository, collaborare con altri utenti, gestire progetti e molto altro.
+            </p>
+        </section>
+        <section id="Git">
+            <h2>Cos'è Git</h2>
+            <p>Git è un sistema di controllo versione distribuito. È stato creato da Linus Torvalds nel 2005 per gestire
+                il kernel di Linux. Git è stato progettato per essere veloce e scalabile, supportando progetti di
+                qualsiasi dimensione.</p>
+            <p>Con Git è possibile tenere traccia delle modifiche apportate ai file, creare branch, fare merge e molto
+                altro.</p>
+        </section>
+        <section id="In">
+            <h2>Installazioni</h2>
+            <p>Per iniziare ad usare Github e Git, è necessario installare i relativi software. Qui troverai le
+                istruzioni per installare Git e SourceTree.</p>
+            <section id="InGit">
+                <h3>Git</h3>
+                <p>Per installare Git, segui le istruzioni presenti sul sito ufficiale: <a
+                        href="https://git-scm.com/">https://git-scm.com/</a></p>
+                <ul>
+                    <li>
+                        <p>è caldamente consigliato, durante l'installazione, impostare questa cosa per non evere
+                            problemi con i profili di git</p>
+                        <img src="imgGit1.png">
+                    </li>
+                </ul>
+                <p>Installa anche github desktop per avere un'interfaccia grafica per gestire i repository: <a
+                        href="https://desktop.github.com/">https://desktop.github.com/</a></p>
+                <p>Dopo aver installato i due vi faccio vedere come fare una prima configurazione (Ci servirà github
+                    desktop solo per effettuare l'accesso)</p>
+                <ul>
+                    <li>Effetua l'accesso a github <br><img src="imgGithub1.png"></li>
+                    <li>Effetua l'accesso o registrati se non hai un accout <br> <img src="imgGithub2.png"></li>
+                    <li>Lascia la configurazione invariata rispetto a cosa vuole fare github desktop <br><img
+                            src="imgGithub3.png"></li>
+                    <li>Hai finito con github desktop</li>
+                </ul>
+            </section>
+            <section id="InSourceTree">
+                <h3>SourceTree</h3>
+                <p>Per installare SourceTree, segui le istruzioni presenti sul sito ufficiale: <a
+                        href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a></p>
+                <p>Per installare SourceTree per quello che ci serve, ti faro vedere per ogni schermata come ho
+                    configurato personalmente SouceTree</p>
+                <ul>
+                    <li>Salta questa pagina <br><img src="imgSource1.png"></li>
+                    <li>Togli la spunta su Mercurian, quindi continua <br> <img src="imgSource2.png"></li>
+                    <li>Qua non toccare nulla!!! <br><img src="imgSource3.png"></li>
+                    <li>Qua puoi tranquillamente dire di no <br><img src="imgSource4.png"></li>
+                    <li>Hai finito con la configurazione di SourceTree</li>
+                </ul>
+            </section>
+        </section>
+        <section id="UsoSourceTree">
+            <h2>Uso di SourceTree</h2>
+            <p>SourceTree è un client Git gratuito e facile da usare. Con SourceTree è possibile gestire i repository,
+                fare commit, push, pull e molto altro.</p>
+            <video controls>
+                <source src="2024-10-28%2016-27-27.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
+
+        </section>
+    </main>
+    <footer>
+        <p>Realizzato da Gabriele Bovina</p>
+        <button id="back-to-top">^</button>
+    </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+</script>
+
 </html>
